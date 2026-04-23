@@ -6,17 +6,15 @@ Connect your AI coding agent to your API workspace in [Artery](https://prodarter
 
 ---
 
-## Install
+## Setup
+
+**Step 1** — Open your Terminal and run this to download the Artery MCP server:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ProdArtery/artery-agentic-ai/main/install.sh | sh
 ```
 
----
-
-## Setup
-
-After installing, register the MCP server with your tool:
+**Step 2** — Register it with your AI tool by running one of these in Terminal:
 
 ### Claude Code
 ```bash
@@ -24,7 +22,7 @@ claude mcp add artery ~/.artery/bin/artery-core
 ```
 
 ### Codex
-Add to `~/.codex/config.toml`:
+Open `~/.codex/config.toml` in any text editor and add the following (replace `YOUR_USERNAME` with your macOS username):
 ```toml
 [mcp_servers.artery]
 command = "/Users/YOUR_USERNAME/.artery/bin/artery-core"
