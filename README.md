@@ -1,6 +1,6 @@
-# Artery Agentic AI
+# Artery
 
-> **This package is for Claude Code and Codex.** If you're using VS Code or Cursor, use the [Artery VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ProdArtery.artery-vs-code-extension) instead, no files get configured.
+> **This package is for Claude Code and Codex.** If you're using VS Code or Cursor, use the [Artery VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ProdArtery.artery-vs-code-extension) instead.
 
 Connect your AI coding agent to your API workspace in [Artery](https://prodartery.com).
 
@@ -8,24 +8,34 @@ Connect your AI coding agent to your API workspace in [Artery](https://prodarter
 
 ## Setup
 
-**Step 1** — Open your Terminal and run this to download the Artery MCP server:
+**Step 1** — Install the Artery MCP server:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ProdArtery/artery-agentic-ai/main/install.sh | sh
+brew tap ProdArtery/artery
+brew install artery-core
 ```
 
-**Step 2** — Register it with your AI tool by running one of these in Terminal:
+**Step 2** — Register it with your AI tool:
 
 ### Claude Code
 ```bash
-claude mcp add artery ~/.artery/bin/artery-core
+claude mcp add artery artery-core
 ```
 
 ### Codex
-Open `~/.codex/config.toml` in any text editor and add the following (replace `YOUR_USERNAME` with your macOS username):
+Open `~/.codex/config.toml` and add:
 ```toml
 [mcp_servers.artery]
-command = "/Users/YOUR_USERNAME/.artery/bin/artery-core"
+command = "artery-core"
+```
+
+---
+
+## Uninstall
+
+```bash
+brew uninstall artery-core
+brew untap ProdArtery/artery
 ```
 
 ---
@@ -34,7 +44,7 @@ command = "/Users/YOUR_USERNAME/.artery/bin/artery-core"
 
 - macOS
 - [Artery](https://prodartery.com) installed and running
-- AI server enabled in Artery toolbar (green = on)
+- MCP server enabled in Artery toolbar (green = on)
 
 ---
 
@@ -42,11 +52,14 @@ command = "/Users/YOUR_USERNAME/.artery/bin/artery-core"
 
 | Tool | Description |
 |---|---|
-| **List Collections** | View all collections and folders |
-| **Read Collection** | See all requests inside a collection |
-| **Create Collection** | Create new collections, including nested ones |
+| **List Folders** | View all folders |
+| **Read Folder** | See all requests inside a folder |
+| **Create Folder** | Create new folders, including nested ones |
 | **Create Request** | Create an API request with URL, body, and content type |
 | **Send Request** | Execute a stored request and return the response |
 | **Read Response** | Read the last response — status, body, headers, timing |
 | **Modify Request** | Update URL, method, body, or content type |
+| **Move Items** | Move a folder or request to a different location |
+| **Delete Request** | Delete a request permanently |
+| **Delete Folder** | Delete a folder and all its contents |
 
