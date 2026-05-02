@@ -19,14 +19,18 @@ brew install artery
 
 ### Claude Code
 ```bash
-claude mcp add artery artery-core
+claude mcp add artery artery
 ```
 
 ### Codex
-Open `~/.codex/config.toml` and add:
+First:
+```bash
+nano ~/.codex/config.toml
+```
+Add:
 ```toml
 [mcp_servers.artery]
-command = "artery-core"
+command = "artery"
 ```
 
 ---

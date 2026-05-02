@@ -6,6 +6,6 @@ class Artery < Formula
   version "0.1.0"
 
   def install
-    bin.install "artery-core"
+    bin.install "artery-core" => "artery"
   end
 end
