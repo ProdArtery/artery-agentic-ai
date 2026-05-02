@@ -12,7 +12,7 @@ Connect your AI coding agent to your API workspace in [Artery](https://prodarter
 
 ```bash
 brew tap ProdArtery/artery
-brew install artery-core
+brew install artery
 ```
 
 **Step 2** — Register it with your AI tool:
@@ -34,7 +34,7 @@ command = "artery-core"
 ## Uninstall
 
 ```bash
-brew uninstall artery-core
+brew uninstall artery
 brew untap ProdArtery/artery
 ```
 

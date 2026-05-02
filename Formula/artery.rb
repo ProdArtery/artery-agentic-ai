@@ -1,4 +1,4 @@
-class ArteryCore < Formula
+class Artery < Formula
   desc "MCP server that connects AI coding agents to Artery"
   homepage "https://prodartery.com"
   url "https://github.com/ProdArtery/homebrew-artery/releases/download/v0.1.0/artery-core"
