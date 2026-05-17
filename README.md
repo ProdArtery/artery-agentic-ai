@@ -1,6 +1,6 @@
 # Artery
 
-> **This package is for Claude Code and Codex.** If you're using VS Code or Cursor, use the [Artery VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ProdArtery.artery-vs-code-extension) instead.
+> **This package is for Claude Code and Codex.** If you're using VS Code or Cursor, use the Artery VS Code Extension instead.
 
 Connect your AI coding agent to your API workspace in [Artery](https://prodartery.com).
 
